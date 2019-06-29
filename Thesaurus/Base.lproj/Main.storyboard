@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Thesaurus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLW-3Z-Pbv">
+                                <rect key="frame" x="87" y="394" width="201" height="60"/>
+                                <color key="backgroundColor" red="0.73372065355329952" green="0.12189067078287598" blue="0.41566854810638082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7Kk-sS-hQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="1" height="2"/>
+                                <state key="normal" title="Show Synonyms">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="synonymsButtonClicked" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDv-F1-ksm"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Hg-P4-i0b">
+                                <rect key="frame" x="87" y="480" width="201" height="222"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKF-s5-3xa">
+                                <rect key="frame" x="87" y="324" width="201" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thesaurus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYC-NJ-Eiq">
+                                <rect key="frame" x="77" y="107" width="221" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="wmH-ea-9KW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.028387070873860085" green="0.03233372238000122" blue="0.2038190038071066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AYC-NJ-Eiq" firstAttribute="centerX" secondItem="QKF-s5-3xa" secondAttribute="centerX" id="5RY-ws-t1k"/>
+                            <constraint firstItem="9Hg-P4-i0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AcS-lX-Vg7"/>
+                            <constraint firstItem="wLW-3Z-Pbv" firstAttribute="top" secondItem="QKF-s5-3xa" secondAttribute="bottom" constant="40" id="DYx-S7-i7r"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QKF-s5-3xa" secondAttribute="trailing" constant="87" id="Lz8-t2-xes"/>
+                            <constraint firstItem="QKF-s5-3xa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="280" id="Phf-OX-1yJ"/>
+                            <constraint firstItem="QKF-s5-3xa" firstAttribute="trailing" secondItem="wLW-3Z-Pbv" secondAttribute="trailing" id="W8j-ar-3F1"/>
+                            <constraint firstItem="AYC-NJ-Eiq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="eSP-m8-6or"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Hg-P4-i0b" secondAttribute="bottom" constant="76" id="fQE-NI-cU4"/>
+                            <constraint firstItem="QKF-s5-3xa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="icB-Z0-Grl"/>
+                            <constraint firstItem="wLW-3Z-Pbv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ids-90-WND"/>
+                            <constraint firstItem="9Hg-P4-i0b" firstAttribute="top" secondItem="wLW-3Z-Pbv" secondAttribute="bottom" constant="26" id="lCp-qB-vSH"/>
+                            <constraint firstItem="AYC-NJ-Eiq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="p0X-lM-qS4"/>
+                            <constraint firstItem="QKF-s5-3xa" firstAttribute="leading" secondItem="9Hg-P4-i0b" secondAttribute="leading" id="qx8-iD-0LB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="QKF-s5-3xa" id="H52-Xc-PQj"/>
+                        <outlet property="synonymTextView" destination="9Hg-P4-i0b" id="CV0-EI-Bqi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="128.57142857142858"/>
+        </scene>
+    </scenes>
+</document>
